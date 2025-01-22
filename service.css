@@ -68,7 +68,7 @@
 
   .service-card p {
     padding: 0 1rem 1rem;
-    color: #555;
+    color: black;
   }
 
   .service-card a {
@@ -91,7 +91,7 @@
   footer {
     text-align: center;
     padding: 1rem;
-    background-color: #f4f4f4;
+    background-color: blue;
     margin-top: 2rem;
-    color:#777;
+    color: white;
 }
