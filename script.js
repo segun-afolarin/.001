@@ -26,7 +26,7 @@ document.querySelectorAll(".card").forEach(card => {
     }
   });
   // Typewriter effect
-  const heroText = "Welcome to Afolarin the Future of Web Designer";
+  const heroText = "welcome to my world of code";
   let index = 0;
   
   function typeWriter() {

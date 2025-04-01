@@ -1,108 +1,229 @@
-/* General Reset */
+/* Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #eef2f5; /* Light neutral background */
+  color: whitesmoke;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #1f2a44; /* Deep blue for elegance */
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+
+}
+
+.navbar-logo:hover {
+  color: #ffa500; /* A vibrant orange hover color */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #ffa500; /* Matching vibrant orange on hover */
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 10%;
+  background-color: gray;
+  color: white;
+}
+
+.about-image {
+  width: 40%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px #1f2a44; /* Soft shadow for depth */
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* About Text */
+.about-text {
+  max-width: 600px;
+  padding-left: 30px;
+}
+
+.about-text h2 {
+  font-size: 2.7rem;
+  color: whitesmoke; /* Deep blue */
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: white; /* Softer dark gray for text */
+  line-height: 1.8;
+}
+
+/* Skills Section */
+.skills-section {
+  background-color: #ffffff;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.skills-section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #1f2a44; /* Deep blue for headings */
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skill-item {
+  background-color: #1e1e30; /* Tomato red for skill cards */
+  padding: 20px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color:  #1e1e30; /* Deep blue footer */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 40px 5%;
   }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9fafc;
-    color: #333;
-    line-height: 1.6;
+
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  header {
-    background-color: blue;
-    color: #fff;
-    padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
     text-align: center;
   }
-  
-  header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+
+  .navbar-menu {
+    flex-direction: column;
+    padding: 10px 0;
   }
-  
-  header p {
-    font-size: 1.2rem;
-  }
-  
-  .about-container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 1rem;
-  }
-  
+
   .about-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
+    flex-direction: column;
+    padding: 20px;
   }
-  
-  .about-image {
-    flex: 1;
-    max-width: 300px;
-  }
-  
-  .about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
+
   .about-text {
-    flex: 2;
+    padding-left: 0;
+    margin-top: 20px;
   }
-  
+
+  .about-image {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .skills-section {
+    padding: 30px 5%;
+  }
+
+  .navbar-link {
+    font-size: 1rem;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+
   .about-text h2 {
     font-size: 2rem;
-    color: black;
-    margin-bottom: 1rem;
   }
-  
+
   .about-text p {
-    margin-bottom: 1rem;
-    color: #555;
+    font-size: 1rem;
   }
-  
-  .skills-section {
-    margin-top: 2rem;
-  }
-  
+
   .skills-section h3 {
-    font-size: 1.8rem;
-    color: white;
-    margin-bottom: 1rem;
+    font-size: 2rem;
   }
-  
-  .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
+
   .skill-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem 1.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
   }
-  
-  .skill-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+  footer p {
+    font-size: 0.9rem;
   }
-  
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: blue;
-    margin-top: 2rem;
-    color: white;
-  }
-  
+}

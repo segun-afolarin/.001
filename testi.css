@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A2E;
+    color: #EAEAEA;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: #16213E;
+    color: #EAEAEA;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #FFD700;
+}
+
+h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Challenges Section */
+.challenges {
+    background-color: #0F3460;
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin: 30px auto;
+    width: 80%;
+    max-width: 1000px;
+    transition: all 0.3s ease;
+}
+
+.challenges:hover {
+    background-color: #16213E;
+}
+
+h2 {
+    color: #FFD700;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Challenge Item */
+.challenge-item {
+    background: #16213E;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-left: 6px solid #FFD700;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.challenge-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FFD700;
+    font-weight: 600;
+}
+
+.challenge-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #EAEAEA;
+}
+
+.challenge-item:hover {
+    background: #233554;
+    transform: scale(1.03);
+}
+
+/* Fun Fact Styling */
+.fun-fact {
+    background: #1A1A2E;
+    border-left: 6px solid #FFD700;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.fun-fact h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    background: #233554;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-left: 6px solid #FFD700;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.testimonial h4 {
+    color: #FFD700;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #16213E;
+    color: #EAEAEA;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .testimonial {
+        width: 90%;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
